@@ -28,14 +28,12 @@ function App() {
         >
           Count is {count}
         </button>
-      </section>
-
+      </section>error erooororoorooroor 
+sgfsdfgsdfsdf
       <div className="ticks"></div>
-
+xcvxcv
       <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
+        <div id="docs">ion-icon"></use>
           </svg>
           <h2>Documentation</h2>
           <p>Your questions, answered</p>
