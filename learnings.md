@@ -38,6 +38,7 @@ Others
     touch <file> = create an empty file; if it exists, update its modified time
     code <file> = open in VS Code
     git stash / git stash pop = park uncommitted changes and bring them back
+    rm <file> = delete file
 
 Others
     touch "file" = creates a file, if already exists, update the latest changed timestamp
