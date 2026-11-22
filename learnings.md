@@ -38,18 +38,12 @@ Others
     touch <file> = create an empty file; if it exists, update its modified time
     code <file> = open in VS Code
     git stash / git stash pop = park uncommitted changes and bring them back
-    rm <file> = delete file
 
 Others
     touch "file" = creates a file, if already exists, update the latest changed timestamp
     code "file" = opens in VS code
 
-Restore
-    git restore --staged "file" = remove things staged but keep the edits locally
-    git revert HEAD = undoes your latest commit
-    git revert "commit ID" = undoes that commit by adding a new commit that reverses it
-
-
+ 
 OPEN QUESTIONS
     What is CI in PR
         Continuous Integration: checks that run automatically on GitHub every time you push to a PR
