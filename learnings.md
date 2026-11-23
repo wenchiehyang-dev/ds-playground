@@ -63,10 +63,6 @@ Git learnings // Nov 22 2026
 Phase 2
 Universal rule for token json file: DTCG
 
-Which objects in your file are tokens, and which are groups? (Hint: look for $value.)
-    anything with "$value" are tokens
-    anything with "$type" are groups
-    but I don't understand why you need groups
-
-What is the $type of color.action.primary, and where does it come from?
-    
+in DTCG, color needs to define color format (e.g., srgb, alpha, oklch)
+Figma directly exports space and radius as numbers without unit (px), when importing to CSS there will be problem. So needs clean up before doing that.
+Figma 匯出時把 semantic 的 alias detach 成實際顏色，原本的連結只記在 $extensions 裡，Style Dictionary 讀不到
