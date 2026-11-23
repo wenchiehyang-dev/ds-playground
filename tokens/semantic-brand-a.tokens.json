@@ -1,0 +1,315 @@
+{
+  "color": {
+    "action": {
+      "primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.14509804546833038,
+            0.38823530077934265,
+            0.9215686321258545
+          ],
+          "alpha": 1,
+          "hex": "#2563EB"
+        },
+        "$description": "Background of the main call-to-action. Max one per view. Not for links or text.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:5:3",
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:0978e465fadfd6f34798642906ccbae98192cbed/-1:-1",
+            "targetVariableName": "color/blue/600",
+            "targetVariableSetId": "VariableCollectionId:0a663a15b06273a499b7fca29a9f1994078cf05f/-1:-1",
+            "targetVariableSetName": "Primitives"
+          }
+        }
+      },
+      "primary-hover": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.11372549086809158,
+            0.30588236451148987,
+            0.8470588326454163
+          ],
+          "alpha": 1,
+          "hex": "#1D4ED8"
+        },
+        "$description": "Hover state of color/action/primary. Only use together with it.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:5:4",
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:e5427183b9e3aa0421fe0a7bc2867b56c74ca9e5/-1:-1",
+            "targetVariableName": "color/blue/700",
+            "targetVariableSetId": "VariableCollectionId:0a663a15b06273a499b7fca29a9f1994078cf05f/-1:-1",
+            "targetVariableSetName": "Primitives"
+          }
+        }
+      },
+      "primary-pressed": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.11764705926179886,
+            0.250980406999588,
+            0.686274528503418
+          ],
+          "alpha": 1,
+          "hex": "#1E40AF"
+        },
+        "$description": "Pressed state of color/action/primary. Only use together with it.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:5:5",
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:68ea66c25410705792eabab335ce2a49a214c7ef/-1:-1",
+            "targetVariableName": "color/blue/800",
+            "targetVariableSetId": "VariableCollectionId:0a663a15b06273a499b7fca29a9f1994078cf05f/-1:-1",
+            "targetVariableSetName": "Primitives"
+          }
+        }
+      }
+    },
+    "text": {
+      "default": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.09019608050584793,
+            0.09019608050584793,
+            0.09019608050584793
+          ],
+          "alpha": 1,
+          "hex": "#171717"
+        },
+        "$description": "Body and heading text on light surfaces.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:5:6",
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:a01addb2e87e4f3452b6f630e3810417f8ca22fe/-1:-1",
+            "targetVariableName": "color/neutral/900",
+            "targetVariableSetId": "VariableCollectionId:0a663a15b06273a499b7fca29a9f1994078cf05f/-1:-1",
+            "targetVariableSetName": "Primitives"
+          }
+        }
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.32156863808631897,
+            0.32156863808631897,
+            0.32156863808631897
+          ],
+          "alpha": 1,
+          "hex": "#525252"
+        },
+        "$description": "Secondary text such as helper text and metadata. Not for disabled text.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:5:7",
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:da7fbbb8e1082023ad6fa0b0b4003e158a394a90/-1:-1",
+            "targetVariableName": "color/neutral/600",
+            "targetVariableSetId": "VariableCollectionId:0a663a15b06273a499b7fca29a9f1994078cf05f/-1:-1",
+            "targetVariableSetName": "Primitives"
+          }
+        }
+      },
+      "on-action": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#FFFFFF"
+        },
+        "$description": "Text and icons placed on color/action backgrounds.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:5:8",
+          "com.figma.scopes": [
+            "TEXT_FILL"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:40cf7b53f61357e55f3f150aa28b3fa97cd04798/-1:-1",
+            "targetVariableName": "color/neutral/0",
+            "targetVariableSetId": "VariableCollectionId:0a663a15b06273a499b7fca29a9f1994078cf05f/-1:-1",
+            "targetVariableSetName": "Primitives"
+          }
+        }
+      }
+    },
+    "surface": {
+      "default": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#FFFFFF"
+        },
+        "$description": "Default page and card background.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:5:9",
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:40cf7b53f61357e55f3f150aa28b3fa97cd04798/-1:-1",
+            "targetVariableName": "color/neutral/0",
+            "targetVariableSetId": "VariableCollectionId:0a663a15b06273a499b7fca29a9f1994078cf05f/-1:-1",
+            "targetVariableSetName": "Primitives"
+          }
+        }
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8313725590705872,
+            0.8313725590705872,
+            0.8313725590705872
+          ],
+          "alpha": 1,
+          "hex": "#D4D4D4"
+        },
+        "$description": "Default border for inputs, cards and dividers.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:5:10",
+          "com.figma.scopes": [
+            "STROKE"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:bf080d93270911ad1a24d344d29298fb583e5667/-1:-1",
+            "targetVariableName": "color/neutral/300",
+            "targetVariableSetId": "VariableCollectionId:0a663a15b06273a499b7fca29a9f1994078cf05f/-1:-1",
+            "targetVariableSetName": "Primitives"
+          }
+        }
+      }
+    },
+    "status": {
+      "danger": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8627451062202454,
+            0.14901961386203766,
+            0.14901961386203766
+          ],
+          "alpha": 1,
+          "hex": "#DC2626"
+        },
+        "$description": "Errors and destructive actions only. Never decorative.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:5:11",
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "TEXT_FILL",
+            "STROKE"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:5e82b7b8ff7dad47026a0c302eafd06cc14e4b2f/-1:-1",
+            "targetVariableName": "color/red/600",
+            "targetVariableSetId": "VariableCollectionId:0a663a15b06273a499b7fca29a9f1994078cf05f/-1:-1",
+            "targetVariableSetName": "Primitives"
+          }
+        }
+      }
+    }
+  },
+  "radius": {
+    "control": {
+      "$type": "number",
+      "$value": 8,
+      "$description": "Corner radius for interactive controls: buttons, inputs, checkboxes.",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:5:12",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:e9e8e54b8bcc1236d4be3b9514d3fba83552ca75/-1:-1",
+          "targetVariableName": "radius/8",
+          "targetVariableSetId": "VariableCollectionId:0a663a15b06273a499b7fca29a9f1994078cf05f/-1:-1",
+          "targetVariableSetName": "Primitives"
+        }
+      }
+    }
+  },
+  "space": {
+    "control": {
+      "x": {
+        "$type": "number",
+        "$value": 16,
+        "$description": "Horizontal padding inside controls.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:5:13",
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:6b32f32dafe775d5298912600950df5ff167c4d4/-1:-1",
+            "targetVariableName": "space/16",
+            "targetVariableSetId": "VariableCollectionId:0a663a15b06273a499b7fca29a9f1994078cf05f/-1:-1",
+            "targetVariableSetName": "Primitives"
+          }
+        }
+      },
+      "y": {
+        "$type": "number",
+        "$value": 8,
+        "$description": "Vertical padding inside controls.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:5:14",
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:814016682911096f385fba4563c41a01a5033c5c/-1:-1",
+            "targetVariableName": "space/8",
+            "targetVariableSetId": "VariableCollectionId:0a663a15b06273a499b7fca29a9f1994078cf05f/-1:-1",
+            "targetVariableSetName": "Primitives"
+          }
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Brand A"
+  }
+}

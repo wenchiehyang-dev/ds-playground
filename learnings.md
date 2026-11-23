@@ -56,3 +56,17 @@ OPEN QUESTIONS
 
     Push only adds commited changes and not staged changes?
         Yes. Staging only prepares a commit on your computer. Until you git commit, nothing is ready to push.
+
+
+
+Git learnings // Nov 22 2026
+Phase 2
+Universal rule for token json file: DTCG
+
+Which objects in your file are tokens, and which are groups? (Hint: look for $value.)
+    anything with "$value" are tokens
+    anything with "$type" are groups
+    but I don't understand why you need groups
+
+What is the $type of color.action.primary, and where does it come from?
+    
