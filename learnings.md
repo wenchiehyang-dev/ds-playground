@@ -68,6 +68,20 @@ Figma directly exports space and radius as numbers without unit (px), when impor
 Figma 匯出時把 semantic 的 alias detach 成實際顏色，原本的連結只記在 $extensions 裡，Style Dictionary 讀不到
 
 
-Token learning // Nov 25 2026
-- Need to name space or radius properly because px needs to be added from transfereing from json to CSS
-- some tokens with numbers wont need px (e.g., opacity or font weight)
+## 25 Nov 2026 – Phase 2, Session 2 (pre-build script, part 1)
+
+**Token pipeline**
+- Figma's native export breaks aliases: `$value` becomes the raw number, and the link only survives in `$extensions["com.figma.aliasData"].targetVariableName` (`space/16`). Style Dictionary ignores `$extensions`, so it can't fix this. A pre-build script has to.
+- Pipeline: Figma export → `tokens/figma/` (raw, never edit) → script → `tokens/normalized/` (generated) → Style Dictionary → CSS.
+- `tokens/normalized/` is in `.gitignore`: it can be rebuilt from raw files + script, like `node_modules`. Committing it invites hand edits that get overwritten.
+- Which numbers become dimensions: decided by **path** (`space/*`, `radius/*`), not by Figma scopes, because Primitives have scope NONE and export no scopes. Caveat: this only works with naming discipline.
+- For alias tokens, change only `$type` (→ `dimension`) and keep `$value: "{space.16}"`. The value comes from the referenced token; the type still has to be honest because other tools read it.
+- A unitless `padding: 16` is invalid CSS and is dropped silently. No error, just no padding.
+
+**First JavaScript**
+- `const` = give a value a name (like a Figma variable). Can't be reassigned, but fields inside an object can change.
+- `JSON.parse` is a tool, not the result: `tokens.space...`, not `JSON.parse.space...`.
+- Keys with dots need brackets: `obj['com.figma.aliasData']`.
+- Quotes = literal text; no quotes = look up the variable. `'reference'` ≠ `reference`.
+- Code runs top to bottom: create a name before using it.
+- Read errors from the line number and the `^` marker. "Cannot read properties of undefined" = the thing left of the dot doesn't exist.
