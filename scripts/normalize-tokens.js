@@ -18,3 +18,9 @@ token.$value = reference;   // 放進你算好的 '{space.16}'（提示：你已
 token.$type = 'dimension';    // 放進 'dimension'
 
 console.log(token);
+
+const group = tokens.space.control;
+
+for (const name in group) {
+  console.log(name);
+}

@@ -85,3 +85,21 @@ Figma 匯出時把 semantic 的 alias detach 成實際顏色，原本的連結�
 - Quotes = literal text; no quotes = look up the variable. `'reference'` ≠ `reference`.
 - Code runs top to bottom: create a name before using it.
 - Read errors from the line number and the `^` marker. "Cannot read properties of undefined" = the thing left of the dot doesn't exist.
+
+
+## 26 Nov 2026 – Loops and object lookup
+
+- An object `{ }` is a lookup table (key → value), like the Figma Variables panel. `obj['md']` and `obj.md` both look up the key named `md`.
+- No quotes = open the box first: `obj[size]` looks up whatever name is inside `size`. After a dot, it's always a fixed name, so `obj.size` looks for a key called `size`.
+- `for (const key in obj)` puts each key into `key`, one per round. JavaScript knows by position, not by name; `key` is just a readable convention.
+- Change a value in a loop with `obj[key] = obj[key] + 'px'`: right side first, then stored back into that slot.
+- One loop only walks one level. Nested token groups need a loop inside a loop (next session).
+
+
+## 27 Nov 2026 – Nested loops, functions, recursion
+
+- A loop inside a loop walks two levels: `space[group][name]` is two lookups in a row.
+- Real tokens have different depths (`space/16` = 2, `color/blue/600` = 3), so a fixed number of loops can't work.
+- `'$value' in item` tells a token from a group. I use `$value` (DTCG rule), not `com.figma.variableId`, because hand-written Brand B won't have Figma extensions.
+- A function's parameter is an empty box, filled each time the function is called (like a component instance's props).
+- `walk(group)` calls itself on every group, so it reaches tokens at any depth. Tracing it step by step in a table helped.
